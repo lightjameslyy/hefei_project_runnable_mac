@@ -1,2 +1,6 @@
-# hefei_project_runnable_mac
-hefei_project_runnable_mac
+# heifei_project
+
+## 1 Description
+
+- language: C++
+- IDE: Qt Creator
