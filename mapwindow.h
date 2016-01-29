@@ -102,6 +102,8 @@ public slots:
 private slots:
     void on_closeButton_clicked();
 
+    void on_captureButton_clicked();
+    
 private:
     Ui::MapWindow *ui;
     QString dataDir;

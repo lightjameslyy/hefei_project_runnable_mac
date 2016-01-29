@@ -463,6 +463,7 @@ void MapWindow::drawSingleLine(QVector<DataFormat *> &vec)
 
 }
 
+
 void MapWindow::showToolTip()
 {
     qDebug()<<QCursor::pos().x()<<QCursor::pos().y();
@@ -1007,4 +1008,12 @@ void MapWindow::setFiletype(const ColorMap::FILE_TYPE &value)
 ColorMap::FILE_TYPE MapWindow::getFiletype() const
 {
     return filetype;
+}
+
+
+
+void MapWindow::on_captureButton_clicked()
+{
+    QPixmap capture = this->grab(this->rect());
+    capture.save("/Users/lightjames/Desktop/a.png","png");
 }
